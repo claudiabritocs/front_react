@@ -4,10 +4,11 @@ import './App.css';
 import Books from './components/books.js';
 import { useEffect, useState } from 'react';
 
-const URL = 'http://127.0.0.1:3000/books';
+// const URL = 'http://127.0.0.1:3000/books';
+const URLProduction = 'https://back-react-brito.herokuapp.com/books';
 
 const getApiData = () => {
-  return fetch(URL, {
+  return fetch(URLProduction, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
